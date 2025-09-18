@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfólio de Landing Pages — Seu Nome</title>
+  <style>
+    /* Estilo simples e responsivo */
+    :root{--accent:#0b66ff;--muted:#6b7280}
+    body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;background:#f7f9fb;color:#0b1220}
+    .container{max-width:1100px;margin:36px auto;padding:20px}
+    .header{display:flex;gap:16px;align-items:center}
+    .avatar{width:72px;height:72px;border-radius:12px;object-fit:cover}
+    h1{margin:0;font-size:1.5rem}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:24px}
+    .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(12,20,32,0.06);transition:transform .15s}
+    .card:hover{transform:translateY(-6px)}
+    .card img{width:100%;height:160px;object-fit:cover;display:block}
+    .card .body{padding:12px}
+    .card h3{margin:0;font-size:1rem;color:#083a66}
+    .card p{margin:8px 0 0;color:#444;font-size:.95rem}
+    .links{display:flex;gap:8px;margin-top:12px}
+    .links a{padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.9rem}
+    .btn-open{background:var(--accent);color:white}
+    .btn-preview{background:#eef6ff;color:var(--accent)}
+    .footer{margin-top:32px;text-align:center;color:var(--muted);font-size:.9rem}
+    @media(max-width:520px){.header{flex-direction:column;align-items:flex-start}.avatar{width:60px;height:60px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <!-- Troque o src pela sua foto (opcional) -->
+      <img class="avatar" src="images/your-avatar.jpg" alt="Sua foto (opcional)">
+      <div>
+        <h1>Portfólio de Landing Pages — Seu Nome</h1>
+        <p class="lead">Landing pages criadas com WordPress + Elementor. Clique em "Abrir site" para ver ao vivo ou "Ver print" para o screenshot.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="grid">
+        <!-- ====== EXEMPLO DE CARD (duplique esse bloco para adicionar mais) ====== -->
+        <article class="card">
+          <img src="images/site1-desktop.png" alt="Print da landing page Cliente X">
+          <div class="body">
+            <h3>Cliente X — Landing Page Institucional</h3>
+            <p>Landing criada com Elementor, otimizada para mobile e com formulário de contato.</p>
+            <div class="links">
+              <a class="btn-open" href="https://site1.com" target="_blank" rel="noopener noreferrer">Abrir site</a>
+              <a class="btn-preview" href="images/site1-desktop.png" target="_blank" rel="noopener noreferrer">Ver print</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- DUPLIQUE  PARA MAIS SITES -->
+        <article class="card">
+          <img src="images/site2-desktop.png" alt="Print da landing page Cliente Y">
+          <div class="body">
+            <h3>Cliente Y — Landing Page (Captação)</h3>
+            <p>Landing para captura de leads, integração com formulário e otimização SEO básica.</p>
+            <div class="links">
+              <a class="btn-open" href="https://site2.com" target="_blank" rel="noopener noreferrer">Abrir site</a>
+              <a class="btn-preview" href="images/site2-desktop.png" target="_blank" rel="noopener noreferrer">Ver print</a>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Feito por Danieli Zeferino • <a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
+
